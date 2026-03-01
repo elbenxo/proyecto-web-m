@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280" fill="none">
+  <defs>
+    <linearGradient id="hero-grad" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#d68aa8"/>
+      <stop offset="100%" stop-color="#c4708f"/>
+    </linearGradient>
+    <pattern id="hero-lace" patternUnits="userSpaceOnUse" width="16" height="16">
+      <circle cx="8" cy="8" r="5" fill="none" stroke="#e0a0bf" stroke-width="0.6" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <path d="M50 65 Q65 15 150 15 Q235 15 250 65 L238 195 Q232 255 195 255 L180 210 Q150 232 120 210 L105 255 Q68 255 62 195 Z" fill="url(#hero-grad)"/>
+  <path d="M50 65 Q65 15 150 15 Q235 15 250 65 L238 195 Q232 255 195 255 L180 210 Q150 232 120 210 L105 255 Q68 255 62 195 Z" fill="url(#hero-lace)"/>
+  <path d="M50 65 Q65 15 150 15 Q235 15 250 65 L245 90 Q150 112 55 90 Z" fill="#b05a7a"/>
+  <path d="M100 82 Q150 95 200 82" stroke="#9e4e6b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M110 22 Q150 8 190 22" stroke="#c9a96e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="18" r="5" fill="#c9a96e"/>
+  <text x="150" y="165" font-family="serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle" opacity="0.3" letter-spacing="6">MARTA</text>
+</svg>

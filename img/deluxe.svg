@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <defs>
+    <pattern id="lace" patternUnits="userSpaceOnUse" width="12" height="12">
+      <circle cx="6" cy="6" r="4" fill="none" stroke="#d4a0b6" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <path d="M30 40 Q40 10 100 10 Q160 10 170 40 L160 130 Q155 170 130 170 L120 140 Q100 155 80 140 L70 170 Q45 170 40 130 Z" fill="#8a3d5c"/>
+  <path d="M30 40 Q40 10 100 10 Q160 10 170 40 L160 130 Q155 170 130 170 L120 140 Q100 155 80 140 L70 170 Q45 170 40 130 Z" fill="url(#lace)"/>
+  <path d="M30 40 Q40 10 100 10 Q160 10 170 40 L165 60 Q100 75 35 60 Z" fill="#6e2d48"/>
+  <path d="M75 15 Q100 5 125 15" stroke="#c9a96e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="12" r="3" fill="#c9a96e"/>
+</svg>
