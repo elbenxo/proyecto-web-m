@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bragas Marta — Lencer&iacute;a con Car&aacute;cter</title>
+  <meta name="description" content="Bragas Marta. Lencer&iacute;a c&oacute;moda, resistente y con estilo. No hay pedo que las parta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Bragas <span>Marta</span></a>
+      <ul class="nav__links">
+        <li><a href="#productos">Colecci&oacute;n</a></li>
+        <li><a href="#por-que">Nosotras</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav__cart" id="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Men&uacute;">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__content">
+      <span class="hero__badge">Nueva Colecci&oacute;n 2026</span>
+      <h1 class="hero__title">Bragas<br><span>Marta</span></h1>
+      <p class="hero__slogan">&laquo; No hay pedo que las parta &raquo;</p>
+      <p class="hero__sub">Lencer&iacute;a dise&ntilde;ada para mujeres reales. Comodidad extrema, resistencia legendaria y un toque de humor que te har&aacute; sonre&iacute;r cada ma&ntilde;ana.</p>
+      <div class="hero__ctas">
+        <a href="#productos" class="btn btn--primary">Ver Colecci&oacute;n</a>
+        <a href="#por-que" class="hero__link">Nuestra historia &rarr;</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__image-block">
+        <img src="img/hero-braga.svg" alt="Bragas Marta - Lencería premium" style="width:180px;height:auto;filter:drop-shadow(0 12px 32px rgba(196,112,143,.25))">
+        <span class="hero__image-label">Bestseller 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span class="marquee__item">Algod&oacute;n Org&aacute;nico</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Tecnolog&iacute;a AntiPedo&trade;</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Env&iacute;o Gratis +30&euro;</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Garant&iacute;a de Por Vida</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Hecho en Espa&ntilde;a</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Algod&oacute;n Org&aacute;nico</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Tecnolog&iacute;a AntiPedo&trade;</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Env&iacute;o Gratis +30&euro;</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Garant&iacute;a de Por Vida</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+      <span class="marquee__item">Hecho en Espa&ntilde;a</span>
+      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="por-que">
+    <h2 class="section-title">&iquest;Por qu&eacute; Bragas Marta?</h2>
+    <p class="section-subtitle">Cuatro razones por las que miles de mujeres conf&iacute;an en nosotras</p>
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">&#x1F4AA;</div>
+        <h3>Indestructibles</h3>
+        <p>Tejido reforzado con tecnolog&iacute;a AntiPedo&trade;. Resistencia probada en los momentos m&aacute;s cr&iacute;ticos.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#x1F32C;&#xFE0F;</div>
+        <h3>Ultra Transpirables</h3>
+        <p>Sistema de ventilaci&oacute;n AirFlow&trade; para frescura constante durante todo el d&iacute;a.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#x1F33F;</div>
+        <h3>100% Org&aacute;nicas</h3>
+        <p>Algod&oacute;n org&aacute;nico certificado. Buenas para tu piel, mejores para el planeta.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">&#x2728;</div>
+        <h3>Dise&ntilde;o &Uacute;nico</h3>
+        <p>Elegancia con personalidad. Porque la lencer&iacute;a tambi&eacute;n puede hacerte sonre&iacute;r.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="products" id="productos">
+    <h2 class="section-title">La Colecci&oacute;n</h2>
+    <p class="section-subtitle">Cada modelo, una declaraci&oacute;n de intenciones</p>
+    <div class="products__grid" id="products-grid">
+      <!-- Products injected by JS -->
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials" id="testimonios">
+    <h2 class="section-title">Nuestras Clientas Opinan</h2>
+    <p class="section-subtitle">M&aacute;s de 12.000 mujeres ya conf&iacute;an en Bragas Marta</p>
+    <div class="testimonials__grid">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">&ldquo;Llevo 3 a&ntilde;os con las mismas bragas y siguen como el primer d&iacute;a. Ni mi matrimonio ha durado tanto.&rdquo;</p>
+        <span class="testimonial-card__author">Luc&iacute;a G.</span>
+        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">&ldquo;Las compr&eacute; por el eslogan y me qued&eacute; por la calidad. Son realmente IRROMPIBLES.&rdquo;</p>
+        <span class="testimonial-card__author">Carmen R.</span>
+        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">&ldquo;La comodidad es incre&iacute;ble. Desde que descubr&iacute; Bragas Marta no quiero otra marca.&rdquo;</p>
+        <span class="testimonial-card__author">Ana M.</span>
+        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <h2>&laquo; No hay pedo que las parta &raquo;</h2>
+    <p>Garant&iacute;a de por vida. Si se rompen, te devolvemos el dinero. Nunca ha pasado.</p>
+    <a href="#productos" class="btn btn--secondary">Comprar Ahora</a>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-subtitle">&iquest;Dudas, tallas, pedidos especiales? Escr&iacute;benos.</p>
+    <form class="contact__form" id="contact-form">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea placeholder="&iquest;En qu&eacute; podemos ayudarte?" rows="4" required></textarea>
+      <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <p class="footer__brand-name">Bragas Marta</p>
+        <p class="footer__brand-slogan">&laquo; No hay pedo que las parta &raquo;</p>
+        <p class="footer__brand-desc">Lencer&iacute;a con car&aacute;cter desde 2026. Dise&ntilde;adas en Espa&ntilde;a con amor, humor y algod&oacute;n org&aacute;nico.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Tienda</p>
+        <a href="#productos">Colecci&oacute;n</a>
+        <a href="#">Gu&iacute;a de tallas</a>
+        <a href="#">Env&iacute;os y devoluciones</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">S&iacute;guenos</p>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Twitter / X</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Bragas Marta. Todos los derechos (y los pedos) reservados.</p>
+    </div>
+  </footer>
+
+  <!-- CART MODAL -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-modal__content">
+      <button class="cart-modal__close" id="cart-close">&times;</button>
+      <h2>Tu Carrito</h2>
+      <div id="cart-items"></div>
+      <div class="cart-modal__total">
+        Total: <span id="cart-total">0.00</span>&euro;
+      </div>
+      <button class="btn btn--primary cart-modal__checkout" id="checkout-btn">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(which gh && gh auth status 2>&1)",
+      "WebSearch",
+      "WebFetch(domain:pixabay.com)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:www.stickpng.com)",
+      "WebFetch(domain:www.pngmart.com)",
+      "Bash(cd /data/data/com.termux/files/home/repos/web_bragas/img && curl -sL -o clasica.webp \"https://cdn.pixabay.com/photo/2013/07/12/14/45/underwear-148866_640.png\" && curl -sL -o sport.webp \"https://cdn.pixabay.com/photo/2014/04/02/10/25/underpants-303397_640.png\" && curl -sL -o deluxe.webp \"https://cdn.pixabay.com/photo/2013/07/12/14/45/underwear-148867_640.png\" && curl -sL -o pack.webp \"https://cdn.pixabay.com/photo/2017/08/01/08/29/panties-2563091_640.png\" && curl -sL -o nocturna.webp \"https://cdn.pixabay.com/photo/2013/07/12/14/45/underwear-148869_640.png\" && curl -sL -o tanga.webp \"https://cdn.pixabay.com/photo/2013/07/12/14/45/underwear-148868_640.png\" && ls -la)"
+    ]
+  }
+}

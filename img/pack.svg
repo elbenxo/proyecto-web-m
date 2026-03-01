@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="none">
+  <!-- Back layers -->
+  <path d="M45 50 Q52 28 100 28 Q148 28 155 50 L148 115 Q145 145 125 145 L117 122 Q100 133 83 122 L75 145 Q55 145 52 115 Z" fill="#c9a96e" opacity="0.5" transform="translate(-8,-8)"/>
+  <path d="M45 50 Q52 28 100 28 Q148 28 155 50 L148 115 Q145 145 125 145 L117 122 Q100 133 83 122 L75 145 Q55 145 52 115 Z" fill="#1c1c1c" opacity="0.5" transform="translate(8,-8)"/>
+  <path d="M45 50 Q52 28 100 28 Q148 28 155 50 L148 115 Q145 145 125 145 L117 122 Q100 133 83 122 L75 145 Q55 145 52 115 Z" fill="#8a3d5c" opacity="0.6" transform="translate(0,-4)"/>
+  <!-- Front -->
+  <path d="M40 52 Q48 25 100 25 Q152 25 160 52 L152 120 Q148 150 128 150 L120 125 Q100 138 80 125 L72 150 Q52 150 48 120 Z" fill="#c4708f"/>
+  <path d="M40 52 Q48 25 100 25 Q152 25 160 52 L155 68 Q100 80 45 68 Z" fill="#b05a7a"/>
+  <!-- x5 label -->
+  <rect x="130" y="120" width="40" height="24" rx="4" fill="#c9a96e"/>
+  <text x="150" y="137" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">x5</text>
+</svg>
