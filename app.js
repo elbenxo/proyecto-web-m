@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     name: "Sport Sudada",
-    desc: "Ex-braga de gimnasio. Su anterior due\u00f1a corr\u00eda 10km diarios. El aroma a esfuerzo es una feature, no un bug.",
+    desc: "Ex-braga de gimnasio. Su anterior due\u00f1o/a corr\u00eda 10km diarios. El aroma a esfuerzo es una feature, no un bug.",
     price: 19.99,
     colors: ["#1c1c1c", "#c4708f", "#2d2d2d"],
     badge: "Intensa",
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     name: "Deluxe Experimentada",
-    desc: "Encaje artesanal con 8 meses de uso premium. Su anterior due\u00f1a era sommelier. Braga con paladar.",
+    desc: "Encaje artesanal con 8 meses de uso premium. Su anterior due\u00f1o/a era sommelier. Braga con paladar.",
     price: 24.99,
     colors: ["#8a3d5c", "#c9a96e", "#1c1c1c"],
     badge: "Premium",
@@ -33,7 +33,7 @@ const products = [
   {
     id: 4,
     name: "Pack Sorpresa",
-    desc: "5 bragas usadas de diferentes due\u00f1as. No eliges, te eligen ellas. La caja de bombones de la lencer\u00eda usada.",
+    desc: "5 bragas usadas de diferentes due\u00f1o/as. No eliges, te eligen ellas. La caja de bombones de la lencer\u00eda usada.",
     price: 49.99,
     colors: ["#c4708f", "#1c1c1c", "#c9a96e"],
     badge: "-30%",
