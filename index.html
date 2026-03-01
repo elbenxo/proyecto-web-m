@@ -3,97 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bragas Marta — Lencer&iacute;a con Historia</title>
+  <title>Bragas Marta &mdash; Lencer&iacute;a con Historia</title>
   <meta name="description" content="Bragas Marta. Lencer&iacute;a usada, aut&eacute;ntica y con car&aacute;cter. De mujer a mujer, porque compartir es vivir.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- GRAIN OVERLAY -->
+  <div class="grain" aria-hidden="true"></div>
+
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__logo">Bragas <span>Marta</span></a>
       <ul class="nav__links">
-        <li><a href="#productos">Colecci&oacute;n</a></li>
-        <li><a href="#por-que">Nosotras</a></li>
+        <li><a href="#productos">Cat&aacute;logo</a></li>
+        <li><a href="#por-que">Filosof&iacute;a</a></li>
         <li><a href="#testimonios">Opiniones</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <button class="nav__cart" id="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
-      <button class="nav__hamburger" id="hamburger" aria-label="Men&uacute;">&#9776;</button>
+      <button class="nav__cart" id="cart-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span id="cart-count">0</span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero__content">
-      <span class="hero__badge">Colecci&oacute;n Pre-Loved 2026</span>
-      <h1 class="hero__title">Bragas<br><span>Marta</span></h1>
+    <div class="hero__bg-text" aria-hidden="true">PRE-LOVED</div>
+    <div class="hero__content reveal">
+      <span class="hero__badge">Colecci&oacute;n Pre-Loved &middot; 2026</span>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Bragas</span>
+        <span class="hero__title-line hero__title-line--accent">Marta</span>
+      </h1>
       <p class="hero__slogan">&laquo; De mujer a mujer &raquo;</p>
       <p class="hero__sub">Lencer&iacute;a usada con car&aacute;cter. Cada braga viene con historia, vivencias y una esencia &uacute;nica. Porque compartir es vivir, y reutilizar es amar.</p>
       <div class="hero__ctas">
-        <a href="#productos" class="btn btn--primary">Ver Colecci&oacute;n</a>
-        <a href="#por-que" class="hero__link">Sus historias &rarr;</a>
+        <a href="#productos" class="btn btn--primary">Ver Cat&aacute;logo</a>
+        <a href="#por-que" class="hero__link">Sus historias <span>&rarr;</span></a>
       </div>
     </div>
-    <div class="hero__visual">
+    <div class="hero__visual reveal reveal--delay-1">
       <div class="hero__image-block">
-        <img src="img/hero-braga.jpg" alt="Bragas Marta - Lencer&iacute;a premium" style="width:100%;height:100%;object-fit:cover;border-radius:12px" onerror="this.src='img/hero-braga.svg';this.style.width='180px';this.style.height='auto';this.style.objectFit='contain'">
-        <span class="hero__image-label">Pre-Loved 2026</span>
+        <img src="img/hero-braga.jpg" alt="Bragas Marta - Lencer&iacute;a pre-loved" onerror="this.src='img/hero-braga.svg';this.style.objectFit='contain';this.style.padding='2rem'">
+        <div class="hero__image-overlay"></div>
+        <span class="hero__image-label">Pre-Loved</span>
+        <span class="hero__image-year">2026</span>
       </div>
+      <div class="hero__floating-tag">Aroma Original&trade;</div>
     </div>
   </header>
 
   <!-- MARQUEE -->
   <div class="marquee">
-    <div class="marquee__inner">
-      <span class="marquee__item">Pre-Loved Premium</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Aroma Original&trade;</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Env&iacute;o Discreto</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Autenticidad Certificada</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">De Mujer a Mujer</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Pre-Loved Premium</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Aroma Original&trade;</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Env&iacute;o Discreto</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">Autenticidad Certificada</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
-      <span class="marquee__item">De Mujer a Mujer</span>
-      <span class="marquee__item"><span class="marquee__dot">&bull;</span></span>
+    <div class="marquee__track">
+      <div class="marquee__inner">
+        <span class="marquee__item">Pre-Loved Premium</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Aroma Original&trade;</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Env&iacute;o Discreto</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Autenticidad Certificada</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">De Mujer a Mujer</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Pre-Loved Premium</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Aroma Original&trade;</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Env&iacute;o Discreto</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">Autenticidad Certificada</span>
+        <span class="marquee__sep">&loz;</span>
+        <span class="marquee__item">De Mujer a Mujer</span>
+        <span class="marquee__sep">&loz;</span>
+      </div>
     </div>
   </div>
 
   <!-- FEATURES -->
   <section class="features" id="por-que">
-    <h2 class="section-title">&iquest;Por qu&eacute; Bragas Marta?</h2>
-    <p class="section-subtitle">Cuatro razones por las que miles de mujeres compran bragas usadas</p>
+    <div class="features__header reveal">
+      <span class="section-label">Nuestra filosof&iacute;a</span>
+      <h2 class="section-title">&iquest;Por qu&eacute; Bragas <em>usadas</em>?</h2>
+      <p class="section-subtitle">Cuatro razones por las que miles de mujeres ya se han pasado al lado pre-loved</p>
+    </div>
     <div class="features__grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">&#x1F483;</div>
+      <div class="feature-card reveal">
+        <span class="feature-card__number">01</span>
         <h3>Con Historia</h3>
         <p>Cada braga ha sido usada con cari&ntilde;o por su due&ntilde;a anterior. No compras lencer&iacute;a, compras experiencias vividas.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#x1F443;</div>
+      <div class="feature-card reveal reveal--delay-1">
+        <span class="feature-card__number">02</span>
         <h3>Aroma Aut&eacute;ntico</h3>
         <p>Mantenemos la esencia original. Sin lavar, sin perfumar. 100% natural, tal como lleg&oacute;.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#x267B;&#xFE0F;</div>
+      <div class="feature-card reveal reveal--delay-2">
+        <span class="feature-card__number">03</span>
         <h3>Sostenible de Verdad</h3>
         <p>Reutilizar es el nuevo reciclar. Moda circular llevada al extremo. El planeta te lo agradece.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">&#x1F525;</div>
+      <div class="feature-card reveal reveal--delay-3">
+        <span class="feature-card__number">04</span>
         <h3>Edici&oacute;n &Uacute;nica</h3>
         <p>No hay dos iguales. Cada braga es irrepetible, como la mujer que la us&oacute; antes que t&uacute;.</p>
       </div>
@@ -102,8 +123,11 @@
 
   <!-- PRODUCTOS -->
   <section class="products" id="productos">
-    <h2 class="section-title">Bragas Disponibles</h2>
-    <p class="section-subtitle">Cada braga, una historia que merece ser continuada</p>
+    <div class="products__header reveal">
+      <span class="section-label">Cat&aacute;logo</span>
+      <h2 class="section-title">Bragas <em>Disponibles</em></h2>
+      <p class="section-subtitle">Cada braga, una historia que merece ser continuada</p>
+    </div>
     <div class="products__grid" id="products-grid">
       <!-- Products injected by JS -->
     </div>
@@ -111,45 +135,70 @@
 
   <!-- TESTIMONIOS -->
   <section class="testimonials" id="testimonios">
-    <h2 class="section-title">Nuestras Clientas Opinan</h2>
-    <p class="section-subtitle">M&aacute;s de 12.000 mujeres ya compran bragas usadas con nosotras</p>
+    <div class="testimonials__header reveal">
+      <span class="section-label">Opiniones reales</span>
+      <h2 class="section-title">Nuestras Clientas <em>Opinan</em></h2>
+      <p class="section-subtitle">M&aacute;s de 12.000 mujeres ya compran bragas usadas con nosotras</p>
+    </div>
     <div class="testimonials__grid">
-      <div class="testimonial-card">
-        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="testimonial-card__text">&ldquo;Compr&eacute; unas por curiosidad y ahora tengo 15 pares. Mi marido no entiende nada pero yo soy feliz.&rdquo;</p>
-        <span class="testimonial-card__author">Luc&iacute;a G.</span>
-        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">Compr&eacute; unas por curiosidad y ahora tengo 15 pares. Mi marido no entiende nada pero yo soy feliz.</p>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Luc&iacute;a G.</span>
+            <span class="testimonial-card__verified">Compra verificada</span>
+          </div>
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="testimonial-card__text">&ldquo;El aroma de las bragas de Mar&iacute;a Jos&eacute; me transport&oacute; a un campo de lavanda en Provenza. O eso quiero creer.&rdquo;</p>
-        <span class="testimonial-card__author">Carmen R.</span>
-        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      <div class="testimonial-card reveal reveal--delay-1">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">El aroma de las bragas de Mar&iacute;a Jos&eacute; me transport&oacute; a un campo de lavanda en Provenza. O eso quiero creer.</p>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Carmen R.</span>
+            <span class="testimonial-card__verified">Compra verificada</span>
+          </div>
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="testimonial-card__text">&ldquo;Al principio me daba cosa, pero ahora intercambio bragas con mis amigas como quien intercambia cromos. Gracias Bragas Marta.&rdquo;</p>
-        <span class="testimonial-card__author">Ana M.</span>
-        <span class="testimonial-card__verified"> &mdash; Compra verificada</span>
+      <div class="testimonial-card reveal reveal--delay-2">
+        <div class="testimonial-card__quote">&ldquo;</div>
+        <p class="testimonial-card__text">Al principio me daba cosa, pero ahora intercambio bragas con mis amigas como quien intercambia cromos. Gracias Bragas Marta.</p>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Ana M.</span>
+            <span class="testimonial-card__verified">Compra verificada</span>
+          </div>
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- BANNER -->
-  <section class="banner">
-    <h2>&laquo; Si las bragas pudieran hablar... &raquo;</h2>
-    <p>Cada par viene con su historia. Garantizamos autenticidad, discreci&oacute;n y al menos 3 meses de uso previo.</p>
-    <a href="#productos" class="btn btn--secondary">Comprar Ahora</a>
+  <section class="banner reveal">
+    <div class="banner__inner">
+      <h2>&laquo; Si las bragas pudieran hablar... &raquo;</h2>
+      <p>Cada par viene con su historia. Garantizamos autenticidad, discreci&oacute;n y al menos 3 meses de uso previo.</p>
+      <a href="#productos" class="btn btn--secondary">Comprar Ahora</a>
+    </div>
   </section>
 
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
-    <h2 class="section-title">Contacto</h2>
-    <p class="section-subtitle">&iquest;Dudas, preferencias de aroma, pedidos especiales? Escr&iacute;benos.</p>
-    <form class="contact__form" id="contact-form">
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu email" required>
-      <textarea placeholder="&iquest;En qu&eacute; podemos ayudarte?" rows="4" required></textarea>
+    <div class="contact__header reveal">
+      <span class="section-label">Escr&iacute;benos</span>
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle">&iquest;Dudas, preferencias de aroma, pedidos especiales? Estamos aqu&iacute;.</p>
+    </div>
+    <form class="contact__form reveal" id="contact-form">
+      <div class="contact__row">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+      </div>
+      <textarea placeholder="&iquest;En qu&eacute; podemos ayudarte?" rows="5" required></textarea>
       <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
     </form>
   </section>
@@ -157,14 +206,14 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer__col">
+      <div class="footer__col footer__col--brand">
         <p class="footer__brand-name">Bragas Marta</p>
         <p class="footer__brand-slogan">&laquo; De mujer a mujer &raquo;</p>
         <p class="footer__brand-desc">Lencer&iacute;a usada con car&aacute;cter desde 2026. De mujer a mujer, con humor, discreci&oacute;n y mucho atrevimiento.</p>
       </div>
       <div class="footer__col">
         <p class="footer__col-title">Tienda</p>
-        <a href="#productos">Colecci&oacute;n</a>
+        <a href="#productos">Cat&aacute;logo</a>
         <a href="#">Gu&iacute;a de tallas</a>
         <a href="#">Env&iacute;os y devoluciones</a>
         <a href="#">FAQ</a>

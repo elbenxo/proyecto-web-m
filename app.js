@@ -8,7 +8,7 @@ const products = [
     colors: ["#c4708f", "#8a3d5c", "#1c1c1c"],
     badge: "M\u00e1s vendida",
     img: "img/clasica",
-    bg: "linear-gradient(145deg, #f5e6ed, #f0d6e2)"
+    bg: "linear-gradient(145deg, #2a1520, #1a0d14)"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     colors: ["#1c1c1c", "#c4708f", "#2d2d2d"],
     badge: "Intensa",
     img: "img/sport",
-    bg: "linear-gradient(145deg, #f0f0f0, #e8e8e8)"
+    bg: "linear-gradient(145deg, #1a1a1a, #0d0d0d)"
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const products = [
     colors: ["#8a3d5c", "#c9a96e", "#1c1c1c"],
     badge: "Premium",
     img: "img/deluxe",
-    bg: "linear-gradient(145deg, #f0e4ea, #e8d5de)"
+    bg: "linear-gradient(145deg, #2a1a22, #1a0f16)"
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const products = [
     colors: ["#c4708f", "#1c1c1c", "#c9a96e"],
     badge: "-30%",
     img: "img/pack",
-    bg: "linear-gradient(145deg, #f5e6ed, #f5edd6)"
+    bg: "linear-gradient(145deg, #221a18, #14100e)"
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const products = [
     colors: ["#1c1c1c", "#3d2050", "#c9a96e"],
     badge: "1 a\u00f1o de uso",
     img: "img/nocturna",
-    bg: "linear-gradient(145deg, #e8e0ee, #ddd5e5)"
+    bg: "linear-gradient(145deg, #1a1520, #0d0a14)"
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const products = [
     colors: ["#dc4a7a", "#c9a96e", "#c43868"],
     badge: "Popular",
     img: "img/tanga",
-    bg: "linear-gradient(145deg, #f5e0e8, #f0d5df)"
+    bg: "linear-gradient(145deg, #2a1420, #1a0c14)"
   }
 ];
 
@@ -68,15 +68,16 @@ let cart = [];
 // ===== RENDER PRODUCTS =====
 function renderProducts() {
   const grid = document.getElementById('products-grid');
-  grid.innerHTML = products.map(p => {
+  grid.innerHTML = products.map((p, i) => {
     const jpgSrc = p.img + '.jpg';
     const svgSrc = p.img + '.svg';
+    const delayClass = i % 3 !== 0 ? ` reveal--delay-${i % 3}` : '';
 
     return `
-    <div class="product-card">
+    <div class="product-card reveal${delayClass}">
       <div class="product-card__img" style="background: ${p.bg}">
         ${p.badge ? `<span class="product-card__badge">${p.badge}</span>` : ''}
-        <img src="${jpgSrc}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover" loading="lazy" onerror="this.src='${svgSrc}';this.style.width='120px';this.style.height='auto';this.style.objectFit='contain'">
+        <img src="${jpgSrc}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover" loading="lazy" onerror="this.src='${svgSrc}';this.style.width='120px';this.style.height='auto';this.style.objectFit='contain';this.style.padding='2rem'">
       </div>
       <div class="product-card__body">
         <h3 class="product-card__name">${p.name}</h3>
@@ -91,6 +92,8 @@ function renderProducts() {
       </div>
     </div>
   `}).join('');
+
+  initScrollReveal();
 }
 
 // ===== CART FUNCTIONS =====
@@ -129,7 +132,7 @@ function renderCart() {
     <div class="cart-item">
       <div>
         <span class="cart-item__name">${item.name}</span>
-        <span style="color:#787878;font-size:.85rem"> x${item.qty}</span>
+        <span style="color:#8a8a8a;font-size:.85rem"> x${item.qty}</span>
       </div>
       <div style="display:flex;align-items:center;gap:1rem">
         <span class="cart-item__price">${(item.price * item.qty).toFixed(2)}&euro;</span>
@@ -183,7 +186,6 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.querySelector('.nav__links').classList.toggle('open');
 });
 
-// Close menu on link click
 document.querySelectorAll('.nav__links a').forEach(link => {
   link.addEventListener('click', () => {
     document.querySelector('.nav__links').classList.remove('open');
@@ -197,5 +199,34 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.target.reset();
 });
 
+// ===== SCROLL REVEAL =====
+function initScrollReveal() {
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+}
+
+// ===== NAV SCROLL EFFECT =====
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('nav');
+  const scroll = window.scrollY;
+  if (scroll > 100) {
+    nav.style.borderBottomColor = 'rgba(201, 169, 110, .12)';
+  } else {
+    nav.style.borderBottomColor = 'rgba(201, 169, 110, .08)';
+  }
+  lastScroll = scroll;
+}, { passive: true });
+
 // ===== INIT =====
 renderProducts();
+initScrollReveal();
