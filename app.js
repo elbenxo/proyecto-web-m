@@ -2,28 +2,28 @@
 const products = [
   {
     id: 1,
-    name: "Cl\u00e1sica Marta",
-    desc: "El modelo original. Algod\u00f3n premium con refuerzo AntiPedo\u2122. Tu b\u00e1sico de cada d\u00eda.",
+    name: "Cl\u00e1sica Pre-Loved",
+    desc: "Usada 6 meses por Marta, 34 a\u00f1os, profesora de yoga. Certificado de autenticidad incluido. Nivel de uso: medio.",
     price: 14.99,
     colors: ["#c4708f", "#8a3d5c", "#1c1c1c"],
-    badge: "Bestseller",
+    badge: "M\u00e1s vendida",
     img: "img/clasica",
     bg: "linear-gradient(145deg, #f5e6ed, #f0d6e2)"
   },
   {
     id: 2,
-    name: "Marta Sport",
-    desc: "Para las m\u00e1s activas. Licra transpirable con m\u00e1xima sujeci\u00f3n. Yoga, running, lo que quieras.",
+    name: "Sport Sudada",
+    desc: "Ex-braga de gimnasio. Su anterior due\u00f1a corr\u00eda 10km diarios. El aroma a esfuerzo es una feature, no un bug.",
     price: 19.99,
     colors: ["#1c1c1c", "#c4708f", "#2d2d2d"],
-    badge: "Nuevo",
+    badge: "Intensa",
     img: "img/sport",
     bg: "linear-gradient(145deg, #f0f0f0, #e8e8e8)"
   },
   {
     id: 3,
-    name: "Marta Deluxe",
-    desc: "Encaje artesanal + tecnolog\u00eda AntiPedo\u2122. Para cuando quieres sentirte especial.",
+    name: "Deluxe Experimentada",
+    desc: "Encaje artesanal con 8 meses de uso premium. Su anterior due\u00f1a era sommelier. Braga con paladar.",
     price: 24.99,
     colors: ["#8a3d5c", "#c9a96e", "#1c1c1c"],
     badge: "Premium",
@@ -32,8 +32,8 @@ const products = [
   },
   {
     id: 4,
-    name: "Pack Indestructible",
-    desc: "5 bragas Marta surtidas. Un color para cada d\u00eda. El pack que lo aguanta todo.",
+    name: "Pack Sorpresa",
+    desc: "5 bragas usadas de diferentes due\u00f1as. No eliges, te eligen ellas. La caja de bombones de la lencer\u00eda usada.",
     price: 49.99,
     colors: ["#c4708f", "#1c1c1c", "#c9a96e"],
     badge: "-30%",
@@ -42,18 +42,18 @@ const products = [
   },
   {
     id: 5,
-    name: "Marta Nocturna",
-    desc: "Seda natural con tecnolog\u00eda SilentNight\u2122. M\u00e1xima discreci\u00f3n mientras duermes.",
+    name: "Nocturna So\u00f1ada",
+    desc: "Usada exclusivamente para dormir durante 1 a\u00f1o. Impregnada de sue\u00f1os y alguna que otra pesadilla.",
     price: 22.99,
     colors: ["#1c1c1c", "#3d2050", "#c9a96e"],
-    badge: "",
+    badge: "1 a\u00f1o de uso",
     img: "img/nocturna",
     bg: "linear-gradient(145deg, #e8e0ee, #ddd5e5)"
   },
   {
     id: 6,
-    name: "Marta Tanga",
-    desc: "M\u00ednimo tejido, m\u00e1xima resistencia. Porque menos es m\u00e1s, pero igual de irrompible.",
+    name: "Tanga Aventurera",
+    desc: "M\u00ednimo tejido, m\u00e1xima historia. Esta tanga ha visto cosas que t\u00fa no creer\u00edas.",
     price: 16.99,
     colors: ["#dc4a7a", "#c9a96e", "#c43868"],
     badge: "Popular",
@@ -175,7 +175,7 @@ document.getElementById('checkout-btn').addEventListener('click', () => {
   updateCartCount();
   renderCart();
   document.getElementById('cart-modal').classList.remove('active');
-  showToast('\u00a1Pedido realizado! Tus bragas est\u00e1n en camino');
+  showToast('\u00a1Pedido realizado! Tus bragas usadas van en camino');
 });
 
 // ===== HAMBURGER =====
