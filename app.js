@@ -69,14 +69,14 @@ let cart = [];
 function renderProducts() {
   const grid = document.getElementById('products-grid');
   grid.innerHTML = products.map(p => {
-    const imgExts = ['jpg', 'webp', 'png'];
+    const jpgSrc = p.img + '.jpg';
     const svgSrc = p.img + '.svg';
 
     return `
     <div class="product-card">
       <div class="product-card__img" style="background: ${p.bg}">
         ${p.badge ? `<span class="product-card__badge">${p.badge}</span>` : ''}
-        <img src="${svgSrc}" alt="${p.name}" style="width:120px;height:auto;filter:drop-shadow(0 8px 16px rgba(0,0,0,.12))" loading="lazy">
+        <img src="${jpgSrc}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover" loading="lazy" onerror="this.src='${svgSrc}';this.style.width='120px';this.style.height='auto';this.style.objectFit='contain'">
       </div>
       <div class="product-card__body">
         <h3 class="product-card__name">${p.name}</h3>
